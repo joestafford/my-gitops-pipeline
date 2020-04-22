@@ -1,6 +1,6 @@
 FROM golang:1.13 AS builder
 
-RUN apt update && apt install --no-cache git
+RUN apt update && apt install git
 
 WORKDIR $GOPATH/src/package/simple-hello-server/
 COPY . .
