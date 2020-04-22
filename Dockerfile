@@ -13,4 +13,4 @@ FROM scratch
 
 COPY --from=builder /go/bin/simple-hello-server /bin/simple-hello-server
 
-ENTRYPOINT ["/bin/http-go-server"]
+ENTRYPOINT ["/bin/simple-hello-server"]
