@@ -2,7 +2,7 @@ FROM golang:1.13 AS builder
 
 RUN apt update && apt install git
 
-WORKDIR $GOPATH/src/package/simple-hello-server/
+WORKDIR $GOPATH/src/simple-hello-server/
 COPY . .
 
 RUN go build -o /bin/simple-hello-server simple-hello-server.go
