@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: joestafford1/http-go-server
+  repository: joestafford1/http-go-server:latest
   tag: latest
   pullPolicy: Always
 
