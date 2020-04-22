@@ -1,6 +1,6 @@
 FROM golang:1.13 AS builder
 
-RUN apk update && apk add --no-cache git
+RUN apt update && apt install --no-cache git
 
 WORKDIR $GOPATH/src/package/simple-hello-server/
 COPY . .
